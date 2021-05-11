@@ -1,0 +1,465 @@
+
+@font-face {
+    font-family: 'Radiance';
+    src: url('../fonts/radiance.eot');
+    src: url('../fonts/radiance.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/radiance.woff') format('woff'),
+         url('../fonts/radiance.ttf') format('truetype'),
+         url('../fonts/radiance.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Radiance-Bold';
+    src: url('../fonts/radiance-bold.eot');
+    src: url('../fonts/radiance-bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/radiance-bold.woff') format('woff'),
+         url('../fonts/radiance-bold.ttf') format('truetype'),
+         url('../fonts/radiance-bold.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Radiance-SemiBold';
+    src: url('../fonts/radiance-semibold.eot');
+    src: url('../fonts/radiance-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/radiance-semibold.woff') format('woff'),
+         url('../fonts/radiance-semibold.ttf') format('truetype'),
+         url('../fonts/radiance-semibold.svg#ywftsvg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+@media (max-width: 1024px) and (min-width: 768px)
+{
+body	{
+		
+		width: 118%;
+	
+	}	
+}
+body
+{
+    font-family: 'Radiance';
+    background-color: #161419;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: #999999;
+    cursor: url("/cursor.cur"), default;
+    .post a {cursor: url(/cursor.png), url(/cursor.cur), default;}
+}
+
+*
+{
+    font-family: 'Radiance';
+}
+
+p, h1, h2, h3, h4, ul
+{
+    margin: 0 0 0 0;
+}
+
+div.Container
+{
+    width: 100%;
+    position: relative;
+}
+
+div.Container .Inner
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1050px;
+}
+
+div.Container, div.Container .Inner
+{
+    background-position: top center;
+}
+
+div.Container.RepeatY, div.Container.RepeatY .Inner
+{
+    background-repeat: repeat-y;
+}
+
+#Header, #Header .Inner
+{
+    background-color: #000000;
+    height: 76px;
+}
+
+#Header
+{
+    position: fixed;
+    top: 0px;
+    z-index: 99999;
+    box-shadow: 0px 0px 18px 0px rgba(0, 190, 255, 0.8);
+}
+
+#HeaderPad
+{
+    background-color: #000000;
+    height: 76px;
+}
+
+#Footer, #Footer .Inner
+{
+    background-image: url( '../images/footer.jpg' );
+    background-color: #000000;
+    height: 287px;
+}
+
+h1.BlueGradient, h2.BlueGradient, h3.BlueGradient, h4.BlueGradient, h4.BlueGradients
+{
+    display: table;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #1578a8;
+}
+
+
+@supports ( background-image: -webkit-linear-gradient(left, #1578a8, #307da3) )
+{
+    h1.BlueGradient, h2.BlueGradient, h3.BlueGradient, h4.BlueGradient
+    {
+        background-image: -webkit-linear-gradient(left, #1578a8, #1578a8);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    h4.BlueGradients{
+        background-image: -webkit-linear-gradient(left, #00dcff, #00dcff);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+@supports ( background-image: -moz-linear-gradient(left, #1578a8, #307da3) )
+{
+    h1.BlueGradient, h2.BlueGradient, h3.BlueGradient, h4.BlueGradient
+    {
+        background-image: -moz-linear-gradient(left, #1578a8, #1578a8);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    h4.BlueGradients{
+        background-image: -moz-linear-gradient(left, #00dcff, #00dcff);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+@supports ( background-image: -ms-linear-gradient(left, #1578a8, #307da3) )
+{
+    h1.BlueGradient, h2.BlueGradient, h3.BlueGradient, h4.BlueGradient
+    {
+        background-image: -ms-linear-gradient(left, #1578a8, #1578a8);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -ms-background-clip: text;
+    }
+    h4.BlueGradients{
+        background-image: -ms-linear-gradient(left, #00dcff, #00dcff);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -ms-background-clip: text;
+    }
+}
+
+@supports ( background-image: -o-linear-gradient(left, #1578a8, #307da3) )
+{
+    h1.BlueGradient, h2.BlueGradient, h3.BlueGradient, h4.BlueGradient
+    {
+        background-image: -o-linear-gradient(left, #1578a8, #1578a8);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    h4.BlueGradients{
+        background-image: -o-linear-gradient(left,  #00dcff, #00dcff);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+@supports ( background-image: linear-gradient(left, #1578a8, #307da3) )
+{
+    h1.BlueGradient, h2.BlueGradient, h3.BlueGradient, h4.BlueGradient
+    {
+        background-image: linear-gradient(left, #1578a8, #1578a8);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+    h4.BlueGradients{
+        background-image: -o-linear-gradient(left,  #00dcff, #00dcff);
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}
+
+@supports ( -ms-ime-align: auto ) {
+    h1.BlueGradient, h2.BlueGradient, h3.BlueGradient, h4.BlueGradient, h4.BlueGradients
+    {
+        color: #1578a8;
+    }
+}
+
+@media screen and (min-color-index:0) and(-webkit-min-device-pixel-ratio:0) 
+{
+    @media
+    {
+        h1.BlueGradient, h2.BlueGradient, h3.BlueGradient, h4.BlueGradient, h4.BlueGradients
+        { 
+            color: #1578a8;
+        }
+    }
+}
+
+h1.BlueGradient
+{
+    font-family: 'Radiance-Bold';
+    font-size: 63px;
+    letter-spacing: 3.5px;
+
+}
+
+h2.BlueGradient
+{
+    font-family: 'Radiance';
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+
+h3.BlueGradient
+{
+    font-family: 'Radiance';
+    font-size: 30px;
+    letter-spacing: 0px;
+    -webkit-text-stroke: 0.2px;
+    -moz-text-stroke: 0.2px;
+    text-stroke: 0.2px;
+}
+
+h4.BlueGradient
+{
+    font-family: 'Radiance';
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    -webkit-text-stroke: 0.2px;
+    -moz-text-stroke: 0.2px;
+    text-stroke: 0.2px;
+}
+h4.BlueGradients
+{
+    font-family: 'Radiance';
+    font-size: 24px;
+    letter-spacing: 2.4px;
+    -webkit-text-stroke: 0.2px;
+    -moz-text-stroke: 0.2px;
+    text-stroke: 0.2px;
+}
+
+p.BigGrayBlock
+{
+    display: block;
+    position: absolute;
+    font-size: 24px;
+    color: #999999;
+    line-height: 40px;
+}
+
+h1.BoldWhite
+{
+    display: table;
+    font-family: 'Radiance-Bold';
+    font-weight: normal;
+    font-size: 100px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 70px;
+    color: white;
+}
+
+h2.OrangeBoxHeader
+{
+    display: table;
+    font-family: 'Radiance';
+    font-weight: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2.2px;
+    padding: 11px 19px 11px 19px;
+    color: #FFFFFF;
+    background: rgba(237,59,28,0.56);
+    background: -moz-linear-gradient(left, rgba(255,102,0,0.56) 0%, rgba(255,102,0,0.56) 1%, rgba(237,59,28,0.56) 100%);
+    background: -webkit-linear-gradient(left, rgba(255,102,0,0.56) 0%,rgba(255,102,0,0.56) 1%,rgba(237,59,28,0.56) 100%);
+    background: linear-gradient(to right, rgba(0, 255, 255, 0.56) 0%,rgba(0, 255, 255, 0.56) 1%,rgba(28, 160, 237, 0.56) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fff661c', endColorstr='#8fed3b1c',GradientType=1 );
+}
+
+h2.OrangeBoxHeader b
+{
+    color: #FF9249;
+    font-weight: normal;
+}
+
+#HubLink
+{
+    position: absolute;
+    display: block;
+    width: 383px;
+    color: #CCCCCC;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1.35px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: rgba(83, 84, 97, 0.5);
+    padding-left: 74px;
+}
+
+#HubLink img
+{
+    margin-bottom: -3px;
+    margin-right: 6px;
+}
+
+#HubLink:hover
+{
+    background-color: rgba( 255, 255, 255, 0.05 );
+}
+
+#HeaderLogo
+{
+    display: table;
+    float: left;
+    width: 55px;
+    height: 55px;
+    margin-top: 8px;
+    margin-left: 46px;
+    margin-right: 19px;
+}
+
+.HeaderPage, .HeaderPage:active, .HeaderPage:visited, .HeaderPage:focus
+{
+    text-decoration: none;
+    display: table;
+    float: left;
+    height: 76px;
+    color: #666666;
+    letter-spacing: 2.4px;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-top: 29px;
+    padding-left: 21px;
+    padding-right: 22px;
+    -webkit-text-stroke: 0.2px;
+    -moz-text-stroke: 0.2px;
+    text-stroke: 0.2px;
+}
+
+.HeaderPage:hover, .HeaderPage.HeaderPageActive
+{
+    -webkit-text-stroke: 0px;
+    -moz-text-stroke: 0px;
+    text-stroke: 0px;
+    border-bottom: 5px solid #00dcff;
+    text-decoration: none;
+}
+
+.HeaderPage:hover
+{
+    color: #FFFFFF;
+    -webkit-transition: color 0s ease-in-out;
+    -moz-transition: color 0s ease-in-out;
+    -o-transition: color 0s ease-in-out;
+    transition: color 0s ease-in-out;
+    border-bottom: 5px solid #00dcff;
+    text-decoration: none;
+}
+
+.HeaderPage.HeaderPageActive, .HeaderPage.HeaderPageActive:hover
+{
+    cursor: default;
+    background-color: #252525;
+    color: #FFFFFF;
+    border-bottom: 5px solid #00dcff;
+    text-decoration: none;
+}
+
+video
+{
+    background-color: #212121;
+}
+
+#BG2 .Inner.VideoInner, #BG2 .Inner.VideoMask
+{
+    padding-top: 0px;
+    padding-left: 0px;
+    width: 100%;
+    min-width: 1160px;
+    overflow: hidden;
+    text-align: center;
+}
+
+#KeyArt
+{
+    width: 100%;
+    max-width: 1600px;
+    height: 1053px;
+    z-index: 0;
+    display: inline-block;
+    object-fit: cover;
+    background-color: transparent;
+}
+
+#BG2 .Inner.VideoMask
+{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    background-color: transparent;
+}
+
+#BG2 .Inner.Overlay
+{
+    background: none;
+    position: relative;
+    top: -2106px;
+    z-index: 100;
+    pointer-events: none;
+}
+
+.BackPattern{
+    background-image: url(../../../core/style/images/background/slider.jpg);
+    background-position: center;
+}
+
+
+.InnerBox {
+   
+    background-color: rgb(17, 18, 20);
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 950px;
+    box-shadow: -3px 2px 30px rgba(0, 0, 0, 0.8);
+}
